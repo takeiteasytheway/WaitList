@@ -48,7 +48,7 @@ export default function WhitepaperPage() {
       // Add title page
       pdf.setFontSize(24)
       pdf.setTextColor(204, 153, 0) // Dark yellow color for visibility
-      pdf.text('BBLIP WHITEPAPER', pageWidth / 2, 50, { align: 'center' })
+      pdf.text('Waitlist WHITEPAPER', pageWidth / 2, 50, { align: 'center' })
       
       pdf.setFontSize(14)
       pdf.setTextColor(64, 64, 64) // Dark gray color
@@ -89,7 +89,7 @@ export default function WhitepaperPage() {
 
       // Executive Summary
       addSectionHeader('EXECUTIVE SUMMARY')
-      addWrappedText('BBLIP represents a paradigm shift in cryptocurrency spending, offering the world&apos;s first truly decentralized, KYC-free crypto card ecosystem. By combining cutting-edge blockchain technology with user-friendly interfaces, BBLIP enables anyone to spend their cryptocurrency anywhere in the world without traditional banking restrictions.')
+      addWrappedText('Waitlist represents a paradigm shift in cryptocurrency spending, offering the world&apos;s first truly decentralized, KYC-free crypto card ecosystem. By combining cutting-edge blockchain technology with user-friendly interfaces, Waitlist enables anyone to spend their cryptocurrency anywhere in the world without traditional banking restrictions.')
       
       yPosition += 5
       addWrappedText('Key Highlights:', 12, [204, 153, 0]) // Dark yellow
@@ -106,10 +106,10 @@ export default function WhitepaperPage() {
       addWrappedText('• Custodial Risk: Users must trust third parties with their funds')
 
       // Solution
-      addSectionHeader('THE BBLIP SOLUTION')
-      addWrappedText('BBLIP addresses these challenges through:')
+      addSectionHeader('THE Waitlist SOLUTION')
+      addWrappedText('Waitlist addresses these challenges through:')
       addWrappedText('• No KYC Required: True financial freedom with zero personal information required')
-      addWrappedText('• Self-Custody: Your keys, your crypto. BBLIP never holds your funds')
+      addWrappedText('• Self-Custody: Your keys, your crypto. Waitlist never holds your funds')
       addWrappedText('• Three Card Tiers: Bronze, Silver, and Black cards with increasing benefits')
       addWrappedText('• Instant Activation: Virtual cards activate instantly upon wallet connection')
 
@@ -233,11 +233,11 @@ export default function WhitepaperPage() {
 
       // Team & Legal
       addSectionHeader('TEAM & COMPLIANCE')
-      addWrappedText('BBLIP is built by a team of experienced blockchain developers, financial experts, and security specialists with 9+ years of combined experience in cryptocurrency and fintech. Our team has previously worked at leading companies including Binance, Coinbase, PayPal, and major investment banks.')
+      addWrappedText('Waitlist is built by a team of experienced blockchain developers, financial experts, and security specialists with 9+ years of combined experience in cryptocurrency and fintech. Our team has previously worked at leading companies including Binance, Coinbase, PayPal, and major investment banks.')
       
       yPosition += 5
       addWrappedText('Regulatory Approach:', 12, [204, 153, 0]) // Dark yellow
-      addWrappedText('BBLIP operates in compliance with international cryptocurrency regulations while maintaining user privacy through our innovative KYC-free architecture. We work closely with legal experts to ensure our platform meets regulatory requirements without compromising user freedom.')
+      addWrappedText('Waitlist operates in compliance with international cryptocurrency regulations while maintaining user privacy through our innovative KYC-free architecture. We work closely with legal experts to ensure our platform meets regulatory requirements without compromising user freedom.')
       
       yPosition += 5
       addWrappedText('Risk Disclosure:', 12, [153, 76, 0]) // Orange for warning
@@ -248,10 +248,10 @@ export default function WhitepaperPage() {
       pdf.setFontSize(10)
       pdf.setTextColor(96, 96, 96) // Dark gray for footer
       pdf.text('This whitepaper is for informational purposes only and does not constitute investment advice.', pageWidth / 2, pageHeight - 30, { align: 'center' })
-      pdf.text('© 2025 BBLIP. All rights reserved.', pageWidth / 2, pageHeight - 20, { align: 'center' })
+      pdf.text('© 2025 Waitlist. All rights reserved.', pageWidth / 2, pageHeight - 20, { align: 'center' })
 
       // Save the PDF
-      pdf.save('BBLIP-Whitepaper.pdf')
+      pdf.save('Waitlist-Whitepaper.pdf')
     } catch (error) {
       console.error('Error generating PDF:', error)
       alert('PDF generation failed. Please try again.')
@@ -279,14 +279,14 @@ export default function WhitepaperPage() {
             </Badge>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              BBLIP
+              Waitlist
               <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                 {' '}Whitepaper
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-zinc-300 max-w-3xl mx-auto mb-8">
-              The Future of Crypto Spending: A Comprehensive Guide to the BBLIP Ecosystem
+              The Future of Crypto Spending: A Comprehensive Guide to the Waitlist Ecosystem
             </p>
 
             <Button
@@ -315,9 +315,9 @@ export default function WhitepaperPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-yellow-400">Executive Summary</h2>
             <div className="prose prose-invert max-w-none">
               <p className="text-lg text-zinc-300 mb-6">
-                BBLIP represents a paradigm shift in cryptocurrency spending, offering the world&apos;s first truly decentralized, 
+                Waitlist represents a paradigm shift in cryptocurrency spending, offering the world&apos;s first truly decentralized, 
                 KYC-free crypto card ecosystem. By combining cutting-edge blockchain technology with user-friendly interfaces, 
-                BBLIP enables anyone to spend their cryptocurrency anywhere in the world without traditional banking restrictions.
+                Waitlist enables anyone to spend their cryptocurrency anywhere in the world without traditional banking restrictions.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
@@ -391,7 +391,7 @@ export default function WhitepaperPage() {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-yellow-400">The BBLIP Solution</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-yellow-400">The Waitlist Solution</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="bg-zinc-900 rounded-xl p-8 border border-yellow-400/20">
@@ -406,7 +406,7 @@ export default function WhitepaperPage() {
                 <Lock className="w-12 h-12 text-yellow-400 mb-4" />
                 <h3 className="text-2xl font-semibold mb-4">Self-Custody</h3>
                 <p className="text-zinc-300">
-                  Your keys, your crypto. BBLIP never holds your funds - you maintain complete control at all times.
+                  Your keys, your crypto. Waitlist never holds your funds - you maintain complete control at all times.
                 </p>
               </div>
               
@@ -950,7 +950,7 @@ export default function WhitepaperPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-yellow-400">Core Team</h2>
             
             <p className="text-lg text-zinc-300 mb-8">
-              BBLIP is built by a team of experienced blockchain developers, financial experts, and security specialists 
+              Waitlist is built by a team of experienced blockchain developers, financial experts, and security specialists 
               with a combined 9+ years of experience in cryptocurrency and fintech. Our team has previously worked at 
               leading companies including Binance, Coinbase, PayPal, and major investment banks.
             </p>
@@ -977,7 +977,7 @@ export default function WhitepaperPage() {
             <div className="bg-zinc-900 rounded-xl p-8 border border-zinc-800">
               <h3 className="text-xl font-semibold mb-4">Regulatory Approach</h3>
               <p className="text-zinc-300 mb-6">
-                BBLIP operates in compliance with international cryptocurrency regulations while maintaining 
+                Waitlist operates in compliance with international cryptocurrency regulations while maintaining 
                 user privacy through our innovative KYC-free architecture. We work closely with legal experts 
                 to ensure our platform meets regulatory requirements without compromising user freedom.
               </p>

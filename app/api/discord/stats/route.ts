@@ -49,15 +49,15 @@ export async function GET(request: NextRequest) {
         reactionsReceived: 0,
         dailyReward: 1,
         canClaimReward: false,
-        isInBBLIPGuild: false
+        isInWaitlistGuild: false
       });
     }
 
-    // Check if user is in BBLIP guild
-    let isInBBLIPGuild = discordUser.is_in_guild || false;
+    // Check if user is in Waitlist guild
+    let isInWaitlistGuild = discordUser.is_in_guild || false;
     
     // Only check guild membership if not already confirmed in database
-    if (!isInBBLIPGuild && discordUser.access_token) {
+    if (!isInWaitlistGuild && discordUser.access_token) {
       try {
         const guildId = process.env.DISCORD_GUILD_ID || '1396412220480426114';
         
@@ -89,24 +89,24 @@ export async function GET(request: NextRequest) {
           }
         }
         
-        isInBBLIPGuild = await isUserInGuild(accessToken, guildId);
+        isInWaitlistGuild = await isUserInGuild(accessToken, guildId);
         console.log('Guild membership check result:', {
           discordId: discordUser.discord_id,
           guildId: guildId,
-          isInGuild: isInBBLIPGuild
+          isInGuild: isInWaitlistGuild
         });
         
         // Update guild membership status in database
         await supabaseAdmin
           .from('discord_users')
-          .update({ is_in_guild: isInBBLIPGuild })
+          .update({ is_in_guild: isInWaitlistGuild })
           .eq('discord_id', discordUser.discord_id);
       } catch (guildError) {
         console.error('Error checking guild membership:', guildError);
         // Continue without guild information
       }
     } else {
-      console.log('Using cached guild membership status:', isInBBLIPGuild);
+      console.log('Using cached guild membership status:', isInWaitlistGuild);
     }
 
     // Get Discord activity data
@@ -154,7 +154,7 @@ export async function GET(request: NextRequest) {
       avatarUrl: discordUser.avatar_url,
       verified: discordUser.verified,
       premiumType: discordUser.premium_type,
-      isInBBLIPGuild,
+      isInWaitlistGuild,
       currentLevel: currentLevelData.name,
       currentLevelNumber: currentLevel,
       totalXP,

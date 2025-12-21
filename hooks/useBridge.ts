@@ -12,7 +12,7 @@ const LAYERZERO_ENDPOINTS = {
 
 // Token Information
 const TOKEN_INFO = {
-  name: "Wrapped BBLIP Token",
+  name: "Wrapped Waitlist Token",
   symbol: "WBBLP",
   decimals: 18,
   bsc: {

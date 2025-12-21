@@ -1030,7 +1030,7 @@ export default function SocialConnectionsPage() {
           {/* Hero Section */}
           <div className="max-w-6xl mx-auto text-center mb-12 pt-16">
             <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#F7FF9B] via-yellow-300 to-[#F7FF9B] animate-text-shine mb-6">
-              BBLIP Social Quests
+              Waitlist Social Quests
             </h1>
             <p className="text-xl md:text-2xl text-[#A1A1AA] mb-8 max-w-3xl mx-auto">
               Connect your wallet to start earning rewards through social engagement
@@ -1395,7 +1395,7 @@ export default function SocialConnectionsPage() {
                     <div className="text-xs text-yellow-400 font-semibold mb-1">Your Referral Link</div>
                     <div className="w-full bg-transparent text-[#F3F3F3] font-mono text-sm overflow-x-auto whitespace-nowrap">
                       {referralStats.referralCode?.code ? (
-                        `https://bblip.io/?ref=${referralStats.referralCode.code}`
+                        `https://Waitlist.io/?ref=${referralStats.referralCode.code}`
                       ) : (
                         'No referral link available'
                       )}
@@ -1404,7 +1404,7 @@ export default function SocialConnectionsPage() {
                   <button
                     onClick={() => {
                       if (referralStats.referralCode?.code) {
-                        navigator.clipboard.writeText(`https://bblip.io/?ref=${referralStats.referralCode.code}`);
+                        navigator.clipboard.writeText(`https://Waitlist.io/?ref=${referralStats.referralCode.code}`);
                         toast.success('Referral link copied to clipboard!');
                       } else {
                         toast.error('No referral link available');
@@ -1671,7 +1671,7 @@ export default function SocialConnectionsPage() {
                       <div
                         key={index}
                         className={`flex items-center justify-between px-4 py-3 rounded-xl border transition-all duration-200 bg-[#18181B] border-[#23232A] cursor-pointer`}
-                        onClick={() => window.open('https://t.me/BblipProtocol_Annoucements', '_blank', 'noopener,noreferrer')}
+                        onClick={() => window.open('https://t.me/WaitlistProtocol_Annoucements', '_blank', 'noopener,noreferrer')}
                       >
                         {/* Sol: Seviye numarası ve adı */}
                         <div className="flex items-center gap-3 min-w-[120px]">

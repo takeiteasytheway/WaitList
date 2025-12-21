@@ -28,7 +28,7 @@ export default function SecurityFeatures() {
               transition={{ delay: 0.1 }}
               className="text-zinc-400 text-lg mb-8"
             >
-              With BBLIP Secure, you&apos;re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.
+              With Waitlist Secure, you&apos;re entering a new era of money security — where our proactive, purpose-built defences and team of fraud specialists help protect every account, 24/7.
             </motion.p>
 
            

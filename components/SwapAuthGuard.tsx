@@ -31,7 +31,7 @@ export default function SwapAuthGuard({ children }: SwapAuthGuardProps) {
         }
 
         // First check for existing valid token
-        const encryptedToken = localStorage.getItem('bblip_auth_token');
+        const encryptedToken = localStorage.getItem('Waitlist_auth_token');
         if (encryptedToken) {
           try {
             const token = decryptData(encryptedToken);
@@ -45,7 +45,7 @@ export default function SwapAuthGuard({ children }: SwapAuthGuardProps) {
             }
           } catch {
             // Invalid token, remove it
-            localStorage.removeItem('bblip_auth_token');
+            localStorage.removeItem('Waitlist_auth_token');
           }
         }
 
@@ -103,7 +103,7 @@ export default function SwapAuthGuard({ children }: SwapAuthGuardProps) {
       // Generate and save token
       const token = await generateToken(address);
       const encryptedToken = encryptData(token);
-      localStorage.setItem('bblip_auth_token', encryptedToken);
+      localStorage.setItem('Waitlist_auth_token', encryptedToken);
       
       // Success!
       setShowPasswordModal(false);

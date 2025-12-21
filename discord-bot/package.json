@@ -1,7 +1,7 @@
 {
-  "name": "bblip-discord-bot",
+  "name": "Waitlist-discord-bot",
   "version": "2.0.0",
-  "description": "BBLIP Discord Bot for community engagement and XP tracking with optimized cache system",
+  "description": "Waitlist Discord Bot for community engagement and XP tracking with optimized cache system",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
@@ -26,7 +26,7 @@
   "keywords": [
     "discord",
     "bot",
-    "bblip",
+    "Waitlist",
     "crypto",
     "xp",
     "rewards",
@@ -36,7 +36,7 @@
     "invite-tracking",
     "referral-system"
   ],
-  "author": "BBLIP Team",
+  "author": "Waitlist Team",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"

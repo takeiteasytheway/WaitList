@@ -148,7 +148,7 @@ export default function TelegramPage() {
           const widgetScript = document.createElement('script');
           widgetScript.setAttribute('data-telegram-login', 'denemebot45bot');
           widgetScript.setAttribute('data-size', 'large');
-          widgetScript.setAttribute('data-auth-url', 'https://bblip.io/telegram?auth=1');
+          widgetScript.setAttribute('data-auth-url', 'https://Waitlist.io/telegram?auth=1');
           widgetScript.setAttribute('data-request-access', 'write');
           widgetScript.setAttribute('data-radius', '8');
           widgetScript.setAttribute('data-lang', 'en');
@@ -457,7 +457,7 @@ export default function TelegramPage() {
                       const widgetScript = document.createElement('script');
                       widgetScript.setAttribute('data-telegram-login', 'denemebot45bot');
                       widgetScript.setAttribute('data-size', 'large');
-                      widgetScript.setAttribute('data-auth-url', 'https://bblip.io/telegram?auth=1');
+                      widgetScript.setAttribute('data-auth-url', 'https://Waitlist.io/telegram?auth=1');
                       widgetScript.setAttribute('data-request-access', 'write');
                       widgetScript.setAttribute('data-radius', '8');
                       widgetScript.setAttribute('data-lang', 'en');

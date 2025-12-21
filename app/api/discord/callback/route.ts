@@ -26,14 +26,14 @@ export async function GET(request: NextRequest) {
     if (error) {
       console.error('Discord OAuth error:', error);
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=${encodeURIComponent(error)}`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=${encodeURIComponent(error)}`
       );
     }
 
     if (!code || !state) {
       console.error('Missing code or state parameter');
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=missing_parameters`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=missing_parameters`
       );
     }
 
@@ -61,7 +61,7 @@ export async function GET(request: NextRequest) {
     if (sessionError || !session) {
       console.error('Invalid or expired OAuth session:', sessionError);
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=invalid_session`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=invalid_session`
       );
     }
 
@@ -118,7 +118,7 @@ export async function GET(request: NextRequest) {
     if (discordCheckError && discordCheckError.code !== 'PGRST116') {
       console.error('Error checking Discord user:', discordCheckError);
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=database_error`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=database_error`
       );
     }
 
@@ -127,13 +127,13 @@ export async function GET(request: NextRequest) {
         // Already connected to this wallet
         console.log('Discord account already connected to this wallet');
         return NextResponse.redirect(
-          `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?success=already_connected`
+          `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?success=already_connected`
         );
       } else {
         // Connected to different wallet
         console.error('Discord account connected to different wallet');
         return NextResponse.redirect(
-          `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=account_taken`
+          `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=account_taken`
         );
       }
     }
@@ -155,14 +155,14 @@ export async function GET(request: NextRequest) {
     if (walletDiscordError && walletDiscordError.code !== 'PGRST116') {
       console.error('Error checking wallet Discord:', walletDiscordError);
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=database_error`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=database_error`
       );
     }
 
     if (existingWalletDiscord) {
       console.error('Wallet already has another Discord account');
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=wallet_has_discord`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=wallet_has_discord`
       );
     }
 
@@ -212,7 +212,7 @@ export async function GET(request: NextRequest) {
         hint: insertError.hint
       });
       return NextResponse.redirect(
-        `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=save_failed`
+        `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=save_failed`
       );
     }
 
@@ -255,7 +255,7 @@ export async function GET(request: NextRequest) {
     });
 
     return NextResponse.redirect(
-      `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?success=connected`
+      `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?success=connected`
     );
 
   } catch (error) {
@@ -267,7 +267,7 @@ export async function GET(request: NextRequest) {
       stack: error instanceof Error ? error.stack : undefined
     });
     return NextResponse.redirect(
-      `${process.env.NEXT_PUBLIC_APP_URL || 'https://bblip.io'}/discord?error=callback_error`
+      `${process.env.NEXT_PUBLIC_APP_URL || 'https://Waitlist.io'}/discord?error=callback_error`
     );
   }
 } 

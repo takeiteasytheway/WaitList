@@ -4,7 +4,7 @@ import crypto from 'crypto';
 export const DISCORD_CONFIG = {
   clientId: process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID || '',
   clientSecret: process.env.DISCORD_CLIENT_SECRET || '',
-  redirectUri: process.env.NEXT_PUBLIC_DISCORD_REDIRECT_URI || 'https://bblip.io/discord/callback',
+  redirectUri: process.env.NEXT_PUBLIC_DISCORD_REDIRECT_URI || 'https://Waitlist.io/discord/callback',
   scope: 'identify',
   apiBase: 'https://discord.com/api/v10'
 };

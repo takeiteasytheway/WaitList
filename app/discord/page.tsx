@@ -32,7 +32,7 @@ interface DiscordStats {
   avatarUrl?: string;
   verified?: boolean;
   premiumType?: number;
-  isInBBLIPGuild?: boolean;
+  isInWaitlistGuild?: boolean;
   currentLevel: string;
   currentLevelNumber: number;
   totalXP: number;
@@ -72,7 +72,7 @@ export default function DiscordPage() {
     nextLevelXP: 101,
     progressToNextLevel: 0,
     maxXPForCurrentLevel: 100,
-    isInBBLIPGuild: false
+    isInWaitlistGuild: false
   });
   const [isLoading, setIsLoading] = useState(true);
   const [isConnecting, setIsConnecting] = useState(false);
@@ -216,7 +216,7 @@ export default function DiscordPage() {
           nextLevelXP: 101,
           progressToNextLevel: 0,
           maxXPForCurrentLevel: 100,
-          isInBBLIPGuild: false
+          isInWaitlistGuild: false
         });
       } else {
         toast.error(data.error || 'Failed to disconnect Discord account');
@@ -395,13 +395,13 @@ export default function DiscordPage() {
                     >
                       {isLoading ? 'Disconnecting...' : 'Disconnect Discord'}
                     </Button>
-                    {!discordStats.isInBBLIPGuild && (
+                    {!discordStats.isInWaitlistGuild && (
                       <Button
                         onClick={() => window.open('https://discord.gg/9KABVSMynV', '_blank')}
                         className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
                       >
                         <ExternalLink className="w-4 h-4" />
-                        Join BBLIP Server
+                        Join Waitlist Server
                       </Button>
                     )}
                   </div>

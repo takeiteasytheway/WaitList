@@ -1,6 +1,6 @@
 {
-  "name": "Bblip - Spend Any Crypto, Anywhere",
-  "short_name": "Bblip",
+  "name": "Waitlist - Spend Any Crypto, Anywhere",
+  "short_name": "Waitlist",
   "description": "Transform your crypto into spendable currency with virtual and physical cards. Accepted at 40M+ merchants worldwide.",
   "start_url": "/",
   "display": "standalone",
@@ -21,7 +21,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/bblip-logo.svg",
+      "src": "/Waitlist-logo.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"

@@ -23,9 +23,9 @@ export default function CTA() {
   const router = useRouter();
 
   const cardImages = [
-    { src: "/Classic.png", alt: "Bblip Bronze Card", type: "BRONZE CARD" },
-    { src: "/light.png", alt: "Bblip Silver Card", type: "SILVER CARD" },
-    { src: "/Classi2c.png", alt: "Bblip Black Card", type: "BLACK CARD" }
+    { src: "/Classic.png", alt: "Waitlist Bronze Card", type: "BRONZE CARD" },
+    { src: "/light.png", alt: "Waitlist Silver Card", type: "SILVER CARD" },
+    { src: "/Classi2c.png", alt: "Waitlist Black Card", type: "BLACK CARD" }
   ];
 
   const handleWalletAction = () => {

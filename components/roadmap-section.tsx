@@ -151,7 +151,7 @@ export default function RoadmapSection() {
           
           <p className="text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto">
             From presale to global adoption - a comprehensive roadmap with transparent progress 
-            and ambitious milestones for the Bblip ecosystem
+            and ambitious milestones for the Waitlist ecosystem
           </p>
         </motion.div>
 

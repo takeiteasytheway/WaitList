@@ -1,4 +1,4 @@
-# BBLIP Telegram Bot
+# Waitlist Telegram Bot
 
 Telegram grubunda kullanıcı aktivitelerini takip eden ve XP sistemi sağlayan bot.
 
@@ -7,7 +7,7 @@ Telegram grubunda kullanıcı aktivitelerini takip eden ve XP sistemi sağlayan 
 ### 1. Bot Token Alın
 1. Telegram'da @BotFather'a gidin
 2. `/newbot` komutunu kullanın
-3. Bot adı: `BBLIP Telegram Bot`
+3. Bot adı: `Waitlist Telegram Bot`
 4. Bot username: `denemebot45bot`
 5. Token'ı kaydedin
 

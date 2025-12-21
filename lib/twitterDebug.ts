@@ -12,7 +12,7 @@ export interface TwitterDebugInfo {
 export function getTwitterDebugInfo(): TwitterDebugInfo {
   return {
     clientId: process.env.NEXT_PUBLIC_X_CLIENT_ID || 'NOT_SET',
-    redirectUri: 'https://www.bblip.io/x/callback',
+    redirectUri: 'https://www.Waitlist.io/x/callback',
     hasClientSecret: !!process.env.X_CLIENT_SECRET,
     environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()

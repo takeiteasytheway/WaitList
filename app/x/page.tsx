@@ -398,7 +398,7 @@ export default function XPage() {
                     <Users className="w-5 h-5 text-blue-400 mt-1" />
                     <div>
                       <h4 className="font-semibold">Community Integration</h4>
-                      <p className="text-gray-400 text-sm">Connect with other BBLIP users on X</p>
+                      <p className="text-gray-400 text-sm">Connect with other Waitlist users on X</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

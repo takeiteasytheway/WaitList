@@ -80,7 +80,7 @@ export default function PasswordModal({
 
   const handleDisconnect = () => {
     disconnect();
-    localStorage.removeItem('bblip_auth_token');
+    localStorage.removeItem('Waitlist_auth_token');
     toast.success("Wallet disconnected successfully!");
     onClose();
   };
@@ -303,8 +303,8 @@ export default function PasswordModal({
                   <div className="pt-4 space-y-3 border-t border-zinc-800">
                     <p className="text-sm text-zinc-400 text-center">
                       Forgot your password? Contact{' '}
-                      <a href="mailto:help@bblip.io" className="text-yellow-400 hover:text-yellow-300 transition-colors">
-                        help@bblip.io
+                      <a href="mailto:help@Waitlist.io" className="text-yellow-400 hover:text-yellow-300 transition-colors">
+                        help@Waitlist.io
                       </a>
                     </p>
                     <button

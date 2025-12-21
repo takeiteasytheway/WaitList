@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Dashboard | Bblip - Crypto Card Management',
-  description: 'Manage your Bblip crypto cards, track rewards, view referral stats, and access exclusive features. Your personal crypto card dashboard.',
-  keywords: 'crypto dashboard, bblip dashboard, crypto card management, referral tracking, rewards dashboard',
+  title: 'Dashboard | Waitlist - Crypto Card Management',
+  description: 'Manage your Waitlist crypto cards, track rewards, view referral stats, and access exclusive features. Your personal crypto card dashboard.',
+  keywords: 'crypto dashboard, Waitlist dashboard, crypto card management, referral tracking, rewards dashboard',
   openGraph: {
-    title: 'Dashboard | Bblip - Crypto Card Management',
-    description: 'Manage your Bblip crypto cards, track rewards, view referral stats, and access exclusive features.',
+    title: 'Dashboard | Waitlist - Crypto Card Management',
+    description: 'Manage your Waitlist crypto cards, track rewards, view referral stats, and access exclusive features.',
     images: ['/twitter-image.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dashboard | Bblip - Crypto Card Management',
-    description: 'Manage your Bblip crypto cards, track rewards, view referral stats, and access exclusive features.',
+    title: 'Dashboard | Waitlist - Crypto Card Management',
+    description: 'Manage your Waitlist crypto cards, track rewards, view referral stats, and access exclusive features.',
     images: ['/twitter-image.png'],
   },
 };

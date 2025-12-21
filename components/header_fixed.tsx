@@ -78,7 +78,7 @@ export default function Header() {
 
   const handleDisconnect = () => {
     // Remove auth token
-    localStorage.removeItem('bblip_auth_token');
+    localStorage.removeItem('Waitlist_auth_token');
     
     // Disconnect wallet
     disconnect();
@@ -153,7 +153,7 @@ export default function Header() {
         { href: "/stake", label: "Stake" },
         { href: "/airdrop", label: "Airdrop" },
         { 
-          label: "Bblip Quests", 
+          label: "Waitlist Quests", 
           href: "/social-connections"
         },
         { 
@@ -217,7 +217,7 @@ export default function Header() {
                   className="drop-shadow-md ml-2"
                 />
                 <div className="hidden md:flex items-baseline">
-                  <span className="text-xl font-bold text-yellow-200 tracking-tight font-space-grotesk">Bblip</span>
+                  <span className="text-xl font-bold text-yellow-200 tracking-tight font-space-grotesk">Waitlist</span>
                 </div>
               </Link>
               {/* Mobile Menu Button */}
@@ -251,7 +251,7 @@ export default function Header() {
                     >
                       <span className="flex items-center gap-2">
                         {item.label}
-                        {item.label === "Bblip Quests" && (
+                        {item.label === "Waitlist Quests" && (
                           <Badge variant="outline" className="border-yellow-200 text-yellow-200 text-xs px-1.5 py-0 h-4 rounded-lg bg-transparent">
                            New
                           </Badge>
@@ -480,7 +480,7 @@ export default function Header() {
                       >
                         <span className="flex items-center gap-2">
                           {category.label}
-                          {category.label === "Bblip Quests" && (
+                          {category.label === "Waitlist Quests" && (
                             <Badge variant="outline" className="border-yellow-200 text-yellow-200 text-xs px-1.5 py-0 h-4 rounded-lg bg-transparent">
                               NEW
                             </Badge>

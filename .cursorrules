@@ -1,8 +1,8 @@
-# Bblip Crypto Fintech DApp - Cursor IDE Rules
+# Waitlist Crypto Fintech DApp - Cursor IDE Rules
 # Optimized for Next.js 15, TypeScript, Web3, Supabase, and crypto integrations
 
 ## PROJECT CONTEXT
-You are working on "Bblip" - a crypto payment card platform with:
+You are working on "Waitlist" - a crypto payment card platform with:
 - Virtual/physical crypto cards for spending anywhere
 - Token presales, staking, cross-chain bridging
 - Referral system with Discord/Telegram/X integrations

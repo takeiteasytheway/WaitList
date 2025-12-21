@@ -223,7 +223,7 @@ Visit `http://localhost:3000` and connect your wallet with BSC Testnet!
 6. **Dashboard Access**: User can view cards and interact with the platform
 
 ### Staking System
-1. **Stake Tokens**: Users can stake BBLIP tokens for rewards
+1. **Stake Tokens**: Users can stake Waitlist tokens for rewards
 2. **Transaction Logging**: All stake transactions are logged with blockchain data
 3. **Reward Tracking**: Pending and confirmed rewards are tracked
 4. **Unstaking**: Users can unstake after minimum lock period
@@ -325,7 +325,7 @@ The project includes a comprehensive Discord bot with the following features:
 ### **Invite System**
 - **Database-First Tracking**: Primary lookup from database (persistent)
 - **Memory Tracking**: Secondary lookup for performance (temporary)
-- **Custom Invite Codes**: `bblip-{userId}` format for easy tracking
+- **Custom Invite Codes**: `Waitlist-{userId}` format for easy tracking
 - **Fallback System**: Automatic fallback to random codes if custom fails
 - **Verification**: Validates saved invites against Discord before use
 - **Rewards**: +25 XP and +3 BBLP per successful invite

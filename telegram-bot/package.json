@@ -1,7 +1,7 @@
 {
-  "name": "bblip-telegram-bot",
+  "name": "Waitlist-telegram-bot",
   "version": "1.0.0",
-  "description": "BBLIP Telegram Bot for XP and rewards system",
+  "description": "Waitlist Telegram Bot for XP and rewards system",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
@@ -14,9 +14,9 @@
     "xp",
     "rewards",
     "blockchain",
-    "bblip"
+    "Waitlist"
   ],
-  "author": "BBLIP Team",
+  "author": "Waitlist Team",
   "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.50.2",

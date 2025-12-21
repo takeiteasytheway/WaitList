@@ -1,4 +1,4 @@
-# BBLIP Discord Bot
+# Waitlist Discord Bot
 
 Discord sunucusunda kullanıcı aktivitelerini takip eden ve XP sistemi sağlayan bot. **Optimize edilmiş cache sistemi** ve **batch processing** ile yüksek performans sağlar.
 
@@ -29,7 +29,7 @@ Discord sunucusunda kullanıcı aktivitelerini takip eden ve XP sistemi sağlaya
 ### 1. Discord Bot Oluşturun
 1. [Discord Developer Portal](https://discord.com/developers/applications)'a gidin
 2. "New Application" butonuna tıklayın
-3. Bot adı: `BBLIP Discord Bot`
+3. Bot adı: `Waitlist Discord Bot`
 4. "Bot" sekmesine gidin ve "Add Bot" butonuna tıklayın
 5. Token'ı kopyalayın ve kaydedin
 
@@ -63,7 +63,7 @@ SUPABASE_URL=your_supabase_url_here
 SUPABASE_SERVICE_KEY=your_supabase_service_key_here
 
 # Web App URL
-WEB_APP_URL=https://bblip.io
+WEB_APP_URL=https://Waitlist.io
 
 # Bot Settings
 NODE_ENV=production

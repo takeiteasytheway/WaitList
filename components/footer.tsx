@@ -21,7 +21,7 @@ export default function Footer() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <motion.a 
-                href="https://x.com/BblipProtocol"
+                href="https://x.com/WaitlistProtocol"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function Footer() {
               </motion.a>
 
               <motion.a 
-                href="https://x.com/BblipProtocol"
+                href="https://x.com/WaitlistProtocol"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
@@ -65,9 +65,9 @@ export default function Footer() {
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-purple-500">
                         <path fillRule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97z" clipRule="evenodd" />
                       </svg>
-                      <span className="text-2xl font-semibold text-white">Stay connected with Bblip</span>
+                      <span className="text-2xl font-semibold text-white">Stay connected with Waitlist</span>
                     </div>
-                    <p className="text-gray-400">Follow @BblipProtocol on X for the latest updates</p>
+                    <p className="text-gray-400">Follow @WaitlistProtocol on X for the latest updates</p>
                   </div>
 
                   <div className="flex items-center gap-2 text-purple-400 group-hover:text-purple-300 transition-colors">
@@ -87,7 +87,7 @@ export default function Footer() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            © 2025 Bblip Protocol
+            © 2025 Waitlist Protocol
           </motion.p>
         </div>
       </Container>

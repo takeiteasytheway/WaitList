@@ -776,13 +776,13 @@ function DashboardContent() {
                       <div className="flex-1 min-w-0">
                         <p className="text-xs text-zinc-500 mb-1">Your referral link</p>
                         <p className="text-xs font-mono text-zinc-300 truncate">
-                          https://bblip.io?ref={referralCode.code}
+                          https://Waitlist.io?ref={referralCode.code}
                         </p>
                       </div>
                       <div className="flex gap-1">
                         <button
                           onClick={() => {
-                            navigator.clipboard.writeText(`https://bblip.io?ref=${referralCode.code}`);
+                            navigator.clipboard.writeText(`https://Waitlist.io?ref=${referralCode.code}`);
                             toast.success('Referral link copied!');
                           }}
                           className="p-1.5 rounded-lg bg-zinc-800 border border-zinc-700/50 hover:bg-zinc-700/80 transition-all duration-200"
@@ -796,10 +796,10 @@ function DashboardContent() {
                               navigator.share({
                                 title: 'Join BBLP',
                                 text: 'Join BBLP and earn rewards when you stake! Use my referral link:',
-                                url: `https://bblip.io?ref=${referralCode.code}`
+                                url: `https://Waitlist.io?ref=${referralCode.code}`
                               });
                             } else {
-                              navigator.clipboard.writeText(`https://bblip.io?ref=${referralCode.code}`);
+                              navigator.clipboard.writeText(`https://Waitlist.io?ref=${referralCode.code}`);
                               toast.success('Referral link copied!');
                             }
                           }}

@@ -88,7 +88,7 @@ export default function AdministratorLogin() {
             </div>
           </motion.div>
           <h1 className="text-3xl font-bold text-white mb-2">Admin Panel</h1>
-          <p className="text-gray-400">Bblip Yönetim Paneli</p>
+          <p className="text-gray-400">Waitlist Yönetim Paneli</p>
         </div>
 
         {/* Login Form */}

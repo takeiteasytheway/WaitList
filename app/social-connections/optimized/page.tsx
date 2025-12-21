@@ -624,7 +624,7 @@ export default function OptimizedSocialConnectionsPage() {
               <div className="text-xs text-yellow-400 font-semibold mb-1">Your Referral Link</div>
               <div className="w-full bg-transparent text-[#F3F3F3] font-mono text-sm overflow-x-auto whitespace-nowrap">
                 {data.referralStats.referralCode?.code ? (
-                  `https://bblip.io/?ref=${data.referralStats.referralCode.code}`
+                  `https://Waitlist.io/?ref=${data.referralStats.referralCode.code}`
                 ) : (
                   'No referral link available'
                 )}
@@ -633,7 +633,7 @@ export default function OptimizedSocialConnectionsPage() {
             <button
               onClick={() => {
                 if (data.referralStats.referralCode?.code) {
-                  navigator.clipboard.writeText(`https://bblip.io/?ref=${data.referralStats.referralCode.code}`);
+                  navigator.clipboard.writeText(`https://Waitlist.io/?ref=${data.referralStats.referralCode.code}`);
                   toast.success('Referral link copied to clipboard!');
                 } else {
                   toast.error('No referral link available');

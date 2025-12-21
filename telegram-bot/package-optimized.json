@@ -1,7 +1,7 @@
 {
-  "name": "bblip-telegram-bot-optimized",
+  "name": "Waitlist-telegram-bot-optimized",
   "version": "2.0.0",
-  "description": "BBLIP Telegram Bot with advanced performance optimizations",
+  "description": "Waitlist Telegram Bot with advanced performance optimizations",
   "main": "bot.js",
   "scripts": {
     "start": "node --max-old-space-size=1024 bot.js",
@@ -18,13 +18,13 @@
     "xp",
     "rewards",
     "blockchain",
-    "bblip",
+    "Waitlist",
     "optimized",
     "performance",
     "cache",
     "batch-processing"
   ],
-  "author": "BBLIP Team",
+  "author": "Waitlist Team",
   "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.50.2",

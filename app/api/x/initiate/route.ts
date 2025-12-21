@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
 
     // Validate OAuth parameters
     const clientId = process.env.NEXT_PUBLIC_X_CLIENT_ID;
-    const redirectUri = 'https://www.bblip.io/x/callback';
+    const redirectUri = 'https://www.Waitlist.io/x/callback';
     
     const validationIssues = validateOAuthParams({
       clientId: clientId || '',

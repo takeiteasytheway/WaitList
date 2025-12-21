@@ -115,7 +115,7 @@ export default function Header() {
 
   const handleDisconnect = () => {
     // Remove auth token
-    localStorage.removeItem('bblip_auth_token');
+    localStorage.removeItem('Waitlist_auth_token');
     
     // Disconnect wallet
     disconnect();
@@ -182,7 +182,7 @@ export default function Header() {
           href: "/eth-yield"
         },
         { 
-          label: "Bblip Quests", 
+          label: "Waitlist Quests", 
           href: "/social-connections"
         },
       ]
@@ -242,7 +242,7 @@ export default function Header() {
                   className="drop-shadow-md ml-2"
                 />
                 <div className="hidden md:flex items-baseline">
-                  <span className="text-xl font-bold text-yellow-200 tracking-tight font-space-grotesk">Bblip</span>
+                  <span className="text-xl font-bold text-yellow-200 tracking-tight font-space-grotesk">Waitlist</span>
                 </div>
               </Link>
               {/* Mobile Menu Button */}

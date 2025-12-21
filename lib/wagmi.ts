@@ -149,12 +149,12 @@ export const config = createConfig({
     walletConnect({ 
       projectId,
       metadata: {
-        name: 'Bblip Labs',
+        name: 'Waitlist Labs',
         description: 'Spend Any Crypto, Anywhere',
-        url: typeof window !== 'undefined' ? window.location.origin : 'https://bblip.io',
+        url: typeof window !== 'undefined' ? window.location.origin : 'https://Waitlist.io',
         icons: [
-          typeof window !== 'undefined' ? `${window.location.origin}/bblip-logo.svg` : 'https://bblip.io/bblip-logo.svg',
-          typeof window !== 'undefined' ? `${window.location.origin}/logo.svg` : 'https://bblip.io/logo.svg'
+          typeof window !== 'undefined' ? `${window.location.origin}/Waitlist-logo.svg` : 'https://Waitlist.io/Waitlist-logo.svg',
+          typeof window !== 'undefined' ? `${window.location.origin}/logo.svg` : 'https://Waitlist.io/logo.svg'
         ]
       }
     }),

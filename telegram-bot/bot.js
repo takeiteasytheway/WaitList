@@ -24,7 +24,7 @@ const SUPABASE_URL = process.env.SUPABASE_URL || 'https://vdsoduzvmnuyhwbbnkwi.s
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkc29kdXp2bW51eWh3YmJua3dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2MTczNDUsImV4cCI6MjA2NjE5MzM0NX0.stWTGS03eY8IdftKpeylOHURDAkmf6LiKas4_Jdd5cw';
 const GROUP_ID = process.env.TELEGRAM_GROUP_ID || '-1001534528304';
 const ADMIN_GROUP_ID = process.env.TELEGRAM_ADMIN_GROUP_ID || '-1002879152667'; // Admin/Technical logs group
-const WEB_APP_URL = process.env.WEB_APP_URL || 'https://bblip.io';
+const WEB_APP_URL = process.env.WEB_APP_URL || 'https://Waitlist.io';
 
 // Rate limiting configuration (optimized)
 const RATE_LIMIT_DELAY = 50; // 50ms between messages (faster)
@@ -444,7 +444,7 @@ async function sendAccountConnectedMessage(telegramId, username) {
     
     const message = `🎉 *Account Successfully Connected\!* 🎉
 
-👋 *Hello @${username}\!* Welcome to BBLIP Community\!
+👋 *Hello @${username}\!* Welcome to Waitlist Community\!
 
 ✅ *Status: Connected*
 🔗 *Wallet: Connected*
@@ -567,7 +567,7 @@ async function handleNewMember(chatId, newMember) {
     
     if (error || !telegramUser) {
       // New user - send welcome message
-      const message = `🎉 Welcome to BBLIP!
+      const message = `🎉 Welcome to Waitlist!
 
 Hi @${username}, glad to have you in our global crypto community!
 
@@ -617,7 +617,7 @@ Your journey to smarter crypto rewards starts now!`;
       try {
         const privateMessage = `🔗 **Account Connection Required** 🔗
 
-👋 **Hello @${username}!** Welcome to BBLIP Community!
+👋 **Hello @${username}!** Welcome to Waitlist Community!
 
 📊 **Current Status:** ❌ Not Connected
 💬 **Chat Activity:** ❌ No XP Rewards
@@ -683,7 +683,7 @@ Click the button below to connect your account!`;
       
     } else {
       // Returning user - send welcome back message
-      const message = `🎉 **Welcome Back to BBLIP!** 🎉
+      const message = `🎉 **Welcome Back to Waitlist!** 🎉
 
 👋 **Hello @${username}!** Great to see you again!
 
@@ -810,7 +810,7 @@ bot.onText(/\/start/, async (msg) => {
                 // Only show success message for new users
                 const successMessage = `🎉 *Referral Success\!* 🎉
 
-👋 *Hello @${username}\\!* Welcome to BBLIP Community\!
+👋 *Hello @${username}\\!* Welcome to Waitlist Community\!
 
 ✅ *Referral Processed:*
 • You joined using a referral link
@@ -833,7 +833,7 @@ bot.onText(/\/start/, async (msg) => {
                 const keyboard = {
                   inline_keyboard: [
                     [{
-                      text: '🚀 Join BBLIP Community',
+                      text: '🚀 Join Waitlist Community',
                       url: `https://t.me/+XqnFyuXylP01MjI0`
                     }],
                     [{
@@ -892,18 +892,18 @@ bot.onText(/\/start/, async (msg) => {
 /help - Show all commands
 
 🚀 **Ready to start earning?**
-Follow the steps above and join the BBLIP community!`;
+Follow the steps above and join the Waitlist community!`;
         
         console.log(`📤 Sending manual connection message...`);
         await sendMessageWithRateLimit(chatId, message);
         console.log(`✅ Manual connection message sent`);
       } else {
-        const message = `🎉 **Welcome to BBLIP Community!** 🎉
+        const message = `🎉 **Welcome to Waitlist Community!** 🎉
 
 👋 **Hello @${username}!** We're excited to have you join our amazing crypto community!
 
-🌟 **What's BBLIP?**
-BBLIP transforms your crypto into spendable currency with virtual and physical cards accepted at 40M+ merchants worldwide!
+🌟 **What's Waitlist?**
+Waitlist transforms your crypto into spendable currency with virtual and physical cards accepted at 40M+ merchants worldwide!
 
 🎯 **Quick Start Guide:**
 1️⃣ Visit: ${WEB_APP_URL}/telegram
@@ -954,7 +954,7 @@ Your messages will earn you XP automatically!${referralProcessed ? '\n\n🎉 **R
         try {
           const privateMessage = `🔗 **Account Connection Required** 🔗
 
-👋 **Hello @${username}!** Welcome to BBLIP Community!
+👋 **Hello @${username}!** Welcome to Waitlist Community!
 
 📊 **Current Status:** ❌ Not Connected
 💬 **Chat Activity:** ❌ No XP Rewards
@@ -1040,7 +1040,7 @@ Click the button below to connect your account!`;
               // Only show success message for new users
               const successMessage = `🎉 *Referral Success\!* 🎉
 
-👋 *Hello @${username}\\!* Welcome to BBLIP Community\!
+👋 *Hello @${username}\\!* Welcome to Waitlist Community\!
 
 ✅ *Referral Processed:*
 • You joined using a referral link
@@ -1063,7 +1063,7 @@ Click the button below to connect your account!`;
               const keyboard = {
                 inline_keyboard: [
                   [{
-                    text: '🚀 Join BBLIP Community',
+                    text: '🚀 Join Waitlist Community',
                     url: `https://t.me/+XqnFyuXylP01MjI0`
                   }],
                   [{
@@ -1135,7 +1135,7 @@ Click the button below to connect your account!`;
     // Escape each line for MarkdownV2
     const safeMessage = messageLines.map(escapeMarkdownV2).join('\n');
 
-    const shareMessage = `🚀 Join me on BBLIP and unlock exclusive crypto rewards!\n\n💰 $100,000 Prize Pool! 💰\n\nBBLIP is the next-gen platform to earn, spend, and grow your crypto with real utility.\n\n👉 Tap the link to get started:\n${referralLink}\n\nWhy join?\n• Earn daily Points token rewards\n• Level up for bigger bonuses\n• Compete on the leaderboard\n• Invite friends and multiply your earnings!\n• Win a share of the $100,000 prize pool!\n\nLet's grow together in the BBLIP community!`;
+    const shareMessage = `🚀 Join me on Waitlist and unlock exclusive crypto rewards!\n\n💰 $100,000 Prize Pool! 💰\n\nWaitlist is the next-gen platform to earn, spend, and grow your crypto with real utility.\n\n👉 Tap the link to get started:\n${referralLink}\n\nWhy join?\n• Earn daily Points token rewards\n• Level up for bigger bonuses\n• Compete on the leaderboard\n• Invite friends and multiply your earnings!\n• Win a share of the $100,000 prize pool!\n\nLet's grow together in the Waitlist community!`;
 
     const keyboard = {
       inline_keyboard: [
@@ -1478,7 +1478,7 @@ bot.onText(/\/help/, async (msg) => {
     }
   } catch (e) { /* ignore errors, treat as not admin */ }
 
-  let message = `🤖 <b>BBLIP Telegram Bot Help</b> 🤖\n\n<b>User Commands</b>\n/start — Connect your account\n/my_xp — View your XP & level\n/my_referral — Get your referral link\n/leaderboard — View top users\n/help — Show this help\n\n<b>How to Earn</b>\n• Chat to earn XP automatically\n• Invite friends for bonus rewards\n• Level up for bigger daily Points\n\n<i>Tip: Connect your wallet to unlock all features and maximize your rewards!</i>\n\nFor more info, visit <a href='https://bblip.io/social-connections'>bblip.io/social-connections</a>`;
+  let message = `🤖 <b>Waitlist Telegram Bot Help</b> 🤖\n\n<b>User Commands</b>\n/start — Connect your account\n/my_xp — View your XP & level\n/my_referral — Get your referral link\n/leaderboard — View top users\n/help — Show this help\n\n<b>How to Earn</b>\n• Chat to earn XP automatically\n• Invite friends for bonus rewards\n• Level up for bigger daily Points\n\n<i>Tip: Connect your wallet to unlock all features and maximize your rewards!</i>\n\nFor more info, visit <a href='https://Waitlist.io/social-connections'>Waitlist.io/social-connections</a>`;
 
   if (isAdmin) {
     message += `\n\n<b>Admin Commands</b>\n/ban, /unban, /restrict, /warn, /batch_debug, /process_batch, /test_xp`;
@@ -2003,12 +2003,12 @@ bot.onText(/\/my_referral/, async (msg) => {
     if (error || !telegramUser) {
       // Send private connection message
       try {
-        const privateMessage = `🔗 <b>Connect Wallet to Get Your Referral Link</b>\n\n👋 <b>Hello!</b> To get your referral link and start earning Points rewards, please connect your wallet.\n\n<b>Status:</b> ❌ Not Connected\n<b>Referral Link:</b> ❌ Not Available\n<b>Points Rewards:</b> ❌ Not Available\n\n<b>How to Connect:</b>\n1️⃣ Visit: <a href='https://bblip.io/social-connections'>bblip.io/social-connections</a>\n2️⃣ Connect your wallet (MetaMask, etc.)\n3️⃣ Click "Connect Telegram"\n\n<b>After connecting, you'll get:</b>\n• Your personal referral link\n• XP & Points rewards for each referral\n• Daily Points token rewards\n\n🚀 <b>Connect now to unlock your rewards!</b>`;
+        const privateMessage = `🔗 <b>Connect Wallet to Get Your Referral Link</b>\n\n👋 <b>Hello!</b> To get your referral link and start earning Points rewards, please connect your wallet.\n\n<b>Status:</b> ❌ Not Connected\n<b>Referral Link:</b> ❌ Not Available\n<b>Points Rewards:</b> ❌ Not Available\n\n<b>How to Connect:</b>\n1️⃣ Visit: <a href='https://Waitlist.io/social-connections'>Waitlist.io/social-connections</a>\n2️⃣ Connect your wallet (MetaMask, etc.)\n3️⃣ Click "Connect Telegram"\n\n<b>After connecting, you'll get:</b>\n• Your personal referral link\n• XP & Points rewards for each referral\n• Daily Points token rewards\n\n🚀 <b>Connect now to unlock your rewards!</b>`;
         const keyboard = {
           inline_keyboard: [[
             {
               text: '🔗 Connect Wallet',
-              url: 'https://bblip.io/social-connections'
+              url: 'https://Waitlist.io/social-connections'
             }
           ]]
         };
@@ -2084,7 +2084,7 @@ bot.onText(/\/my_referral/, async (msg) => {
     // Escape each line for MarkdownV2
     const safeMessage = messageLines.map(escapeMarkdownV2).join('\n');
 
-    const shareMessage = `🚀 Join me on BBLIP and unlock exclusive crypto rewards!\n\n💰 $100,000 Prize Pool! 💰\n\nBBLIP is the next-gen platform to earn, spend, and grow your crypto with real utility.\n\n👉 Tap the link to get started:\n${referralLink}\n\nWhy join?\n• Earn daily Points token rewards\n• Level up for bigger bonuses\n• Compete on the leaderboard\n• Invite friends and multiply your earnings!\n• Win a share of the $100,000 prize pool!\n\nLet's grow together in the BBLIP community!`;
+    const shareMessage = `🚀 Join me on Waitlist and unlock exclusive crypto rewards!\n\n💰 $100,000 Prize Pool! 💰\n\nWaitlist is the next-gen platform to earn, spend, and grow your crypto with real utility.\n\n👉 Tap the link to get started:\n${referralLink}\n\nWhy join?\n• Earn daily Points token rewards\n• Level up for bigger bonuses\n• Compete on the leaderboard\n• Invite friends and multiply your earnings!\n• Win a share of the $100,000 prize pool!\n\nLet's grow together in the Waitlist community!`;
 
     const keyboard = {
       inline_keyboard: [
@@ -2980,7 +2980,7 @@ async function updateUserActivity(telegramId, updates) {
             inline_keyboard: [[
               {
                 text: '🎁 Claim Daily Rewards',
-                url: 'https://bblip.io/social-connections'
+                url: 'https://Waitlist.io/social-connections'
               }
             ]]
           };

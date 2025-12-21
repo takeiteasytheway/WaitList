@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://bblip.io/sitemap.xml
+Sitemap: https://Waitlist.io/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1

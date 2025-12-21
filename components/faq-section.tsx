@@ -7,8 +7,8 @@ import Container from './container'
 
 const faqs = [
   {
-    question: 'How does Bblip Card work without KYC?',
-    answer: 'Bblip Card leverages a unique regulatory-compliant escrow protocol: when you connect your wallet, our system issues a virtual card linked to a pooled, licensed entity that acts as a legal intermediary. This structure satisfies regulatory requirements without collecting your personal data. All spending is authorized by your wallet signature, so you enjoy true KYC-free payments—legally and instantly.'
+    question: 'How does Waitlist Card work without KYC?',
+    answer: 'Waitlist Card leverages a unique regulatory-compliant escrow protocol: when you connect your wallet, our system issues a virtual card linked to a pooled, licensed entity that acts as a legal intermediary. This structure satisfies regulatory requirements without collecting your personal data. All spending is authorized by your wallet signature, so you enjoy true KYC-free payments—legally and instantly.'
   },
   {
     question: 'What are the card limits?',
@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: 'Is my crypto safe?',
-    answer: 'Yes. Bblip uses non-custodial technology, meaning you always maintain control of your private keys. Your crypto stays in your wallet until the moment of transaction. When you make a purchase, you receive a notification and must approve the exact amount in your wallet—just like other secure checkout systems. Nothing leaves your wallet without your explicit permission, ensuring 100% self-custody at all times.'
+    answer: 'Yes. Waitlist uses non-custodial technology, meaning you always maintain control of your private keys. Your crypto stays in your wallet until the moment of transaction. When you make a purchase, you receive a notification and must approve the exact amount in your wallet—just like other secure checkout systems. Nothing leaves your wallet without your explicit permission, ensuring 100% self-custody at all times.'
   },
   {
     question: 'What happens to my staked tokens?',
-    answer: 'Staking is the core of the Bblip ecosystem. Without staking, users cannot access card services. When you stake your tokens, they are securely held in a smart contract, earning a competitive 32% APY. This not only provides you with attractive staking rewards, but also unlocks the freedom to spend with your Bblip Card—no KYC required. You can unstake instantly at any time, with no cooldowns or penalties, ensuring maximum flexibility and control over your assets.'
+    answer: 'Staking is the core of the Waitlist ecosystem. Without staking, users cannot access card services. When you stake your tokens, they are securely held in a smart contract, earning a competitive 32% APY. This not only provides you with attractive staking rewards, but also unlocks the freedom to spend with your Waitlist Card—no KYC required. You can unstake instantly at any time, with no cooldowns or penalties, ensuring maximum flexibility and control over your assets.'
   }
 ]
 

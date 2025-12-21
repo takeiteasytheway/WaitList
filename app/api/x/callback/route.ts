@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
     // Exchange authorization code for access token
     const clientId = process.env.NEXT_PUBLIC_X_CLIENT_ID;
     const clientSecret = process.env.X_CLIENT_SECRET;
-    const redirectUri = 'https://www.bblip.io/x/callback';
+    const redirectUri = 'https://www.Waitlist.io/x/callback';
 
     if (!clientId || !clientSecret) {
       console.error('Missing OAuth credentials');

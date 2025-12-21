@@ -273,7 +273,7 @@ export default function ReferralLeaderboardPage() {
             >
               <img 
                 src="/3D.png" 
-                alt="Bblip Protocol 3D Coin" 
+                alt="Waitlist Protocol 3D Coin" 
                 className="w-32 h-32 md:w-40 md:h-40 object-contain"
               />
             </motion.div>
@@ -288,13 +288,13 @@ export default function ReferralLeaderboardPage() {
                 variants={itemVariants}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#F7FF9B] via-yellow-300 to-[#F7FF9B] animate-text-shine mb-4"
               >
-                Bblip Protocol Airdrop
+                Waitlist Protocol Airdrop
               </motion.h1>
                              <motion.p 
                  variants={itemVariants}
                  className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl px-4"
                >
-                 Join the revolution and claim your exclusive BBLP tokens. Early supporters get rewarded for their loyalty to the Bblip Protocol ecosystem.
+                 Join the revolution and claim your exclusive BBLP tokens. Early supporters get rewarded for their loyalty to the Waitlist Protocol ecosystem.
                </motion.p>
             </motion.div>
           </div>
@@ -457,13 +457,10 @@ export default function ReferralLeaderboardPage() {
                       <div className="bg-zinc-800/50 rounded-lg p-4 mb-4 border border-zinc-700/50">
                         <p className="text-zinc-300 text-sm leading-relaxed">
                           To participate in the BBLP airdrop, you need to connect your Web3 wallet. 
-                          This ensures secure token distribution and prevents duplicate claims.
                         </p>
                       </div>
                       
-                      <div className="text-center text-zinc-400 text-sm">
-                        Use the wallet connect button in the header
-                      </div>
+                     
                     </div>
                   )}
 
@@ -490,7 +487,7 @@ export default function ReferralLeaderboardPage() {
                       <div className="text-center">
                         <button
                           onClick={() => {
-                            window.open('https://x.com/BblipProtocol/status/1949695664683663461', '_blank');
+                            window.open('https://x.com/WaitlistProtocol/status/1944492827678785944', '_blank');
                             localStorage.setItem('xTaskCompleted', 'true');
                             setXConnected(true);
                           }}
@@ -567,16 +564,16 @@ export default function ReferralLeaderboardPage() {
                           <div className="flex-1 bg-zinc-900/80 rounded-lg px-4 py-3 border border-zinc-700/50 min-w-0 backdrop-blur-sm">
                             <p className="text-sm text-zinc-200 font-mono truncate">
                               {referralCode ? 
-                                `https://bblip.io?ref=${referralCode.code}` : 
-                                `https://bblip.io?ref=${address.slice(0, 6)}...${address.slice(-4)}`
+                                `https://Waitlist.io?ref=${referralCode.code}` : 
+                                `https://Waitlist.io?ref=${address.slice(0, 6)}...${address.slice(-4)}`
                               }
                             </p>
                           </div>
                           <button
                             onClick={() => {
                               const link = referralCode ? 
-                                `https://bblip.io?ref=${referralCode.code}` : 
-                                `https://bblip.io?ref=${address}`;
+                                `https://Waitlist.io?ref=${referralCode.code}` : 
+                                `https://Waitlist.io?ref=${address}`;
                               navigator.clipboard.writeText(link);
                               // Toast notification eklenebilir
                             }}

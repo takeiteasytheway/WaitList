@@ -28,7 +28,7 @@ const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN || '';
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://vdsoduzvmnuyhwbbnkwi.supabase.co';
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZkc29kdXp2bW51eWh3YmJua3dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2MTczNDUsImV4cCI6MjA2NjE5MzM0NX0.stWTGS03eY8IdftKpeylOHURDAkmf6LiKas4_Jdd5cw';
 const GUILD_ID = process.env.DISCORD_GUILD_ID || '1392958299695222844';
-const WEB_APP_URL = process.env.WEB_APP_URL || 'https://bblip.io';
+const WEB_APP_URL = process.env.WEB_APP_URL || 'https://Waitlist.io';
 
 // Discord client setup
 const client = new Client({
@@ -490,9 +490,9 @@ client.on(Events.MessageCreate, async (message) => {
         .setDescription(`Hi <@${userId}>! Connect your Discord account to your wallet and start earning exclusive rewards.`)
         .addFields(
           { name: 'Why Connect?', value: '• Earn XP for every message you send\n• Daily and weekly Points token bonuses\n• Level up and climb the leaderboard\n• Unlock special community perks and events', inline: false },
-          { name: 'How to Connect', value: 'Go to [bblip.io/social-connections](https://bblip.io/social-connections) and link your wallet in seconds.', inline: false }
+          { name: 'How to Connect', value: 'Go to [Waitlist.io/social-connections](https://Waitlist.io/social-connections) and link your wallet in seconds.', inline: false }
         )
-        .setFooter({ text: 'BBLIP — Secure, rewarding, and community-driven.' })
+        .setFooter({ text: 'Waitlist — Secure, rewarding, and community-driven.' })
         .setTimestamp();
 
       const row = new ActionRowBuilder()
@@ -764,7 +764,7 @@ client.on(Events.GuildMemberAdd, async (member) => {
 
   const embed = new EmbedBuilder()
     .setColor(0x7289da)
-    .setTitle('🎉 Welcome to BBLIP Community!')
+    .setTitle('🎉 Welcome to Waitlist Community!')
     .setDescription(`Welcome <@${member.id}> to our Discord server!`)
     .addFields(
       { name: 'Getting Started', value: 'Connect your Discord account to your wallet to start earning XP and rewards!' },
@@ -1085,7 +1085,7 @@ async function handleInviteCommand(interaction) {
       
       // Look for existing custom invite for this user
       for (const [code, invite] of invites) {
-        if (code.startsWith(`bblip-${userId}`)) {
+        if (code.startsWith(`Waitlist-${userId}`)) {
           existingInvite = invite;
           break;
         }
@@ -1099,7 +1099,7 @@ async function handleInviteCommand(interaction) {
         console.log(`✅ Found existing Discord invite for user ${userId}: ${inviteCode}`);
       } else {
         // Create new custom invite
-        const customInviteCode = `bblip-${userId}`;
+        const customInviteCode = `Waitlist-${userId}`;
         
         try {
           invite = await interaction.guild.invites.create(interaction.channel, {
@@ -1137,7 +1137,7 @@ async function handleInviteCommand(interaction) {
       });
 
       // Track custom invite mapping (both custom codes and fallback codes)
-      if (inviteCode.startsWith('bblip-')) {
+      if (inviteCode.startsWith('Waitlist-')) {
         customInviteTracking.set(inviteCode, {
           userId: userId,
           inviteCode: inviteCode,
@@ -1184,7 +1184,7 @@ async function handleInviteCommand(interaction) {
     const embed = new EmbedBuilder()
       .setColor(0x00ff00)
       .setTitle('🔗 Your Invite Link')
-      .setDescription(`Here's your personal invite link for the BBLIP Discord server!`)
+      .setDescription(`Here's your personal invite link for the Waitlist Discord server!`)
       .addFields(
         { name: 'Invite Link', value: inviteLink, inline: false },
         { name: 'Rewards', value: `• +${DISCORD_INVITE_XP_REWARD} XP per invite\n• +${DISCORD_INVITE_BBLP_REWARD} Points per invite`, inline: false },
@@ -1224,7 +1224,7 @@ async function handleInviteCommand(interaction) {
 async function handleHelpCommand(interaction) {
   const embed = new EmbedBuilder()
     .setColor(0x7289da)
-    .setTitle('🤖 BBLIP Discord Bot — Help & Features')
+    .setTitle('🤖 Waitlist Discord Bot — Help & Features')
     .setDescription('Welcome! Here are the main commands and features you can use:')
     .addFields(
       { name: '/xp', value: 'Check your current XP, level, and progress.', inline: true },
@@ -1234,9 +1234,9 @@ async function handleHelpCommand(interaction) {
       { name: '\u200B', value: '\u200B', inline: false },
       { name: 'XP & Level System', value: '• Send messages to earn XP\n• Daily activity and weekly streak bonuses\n• Level up to earn more Points token rewards', inline: false },
       { name: 'Invite Rewards', value: '• Share your invite link\n• Earn XP and Points when friends join\n• Track your invites easily', inline: false },
-      { name: 'How to Connect', value: 'Go to [bblip.io/social-connections](https://bblip.io/social-connections) to link your Discord and wallet for full rewards.', inline: false }
+      { name: 'How to Connect', value: 'Go to [Waitlist.io/social-connections](https://Waitlist.io/social-connections) to link your Discord and wallet for full rewards.', inline: false }
     )
-    .setFooter({ text: 'BBLIP — Secure, rewarding, and community-driven.' })
+    .setFooter({ text: 'Waitlist — Secure, rewarding, and community-driven.' })
     .setTimestamp();
 
   await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -2090,7 +2090,7 @@ async function syncInviteLinks(interaction) {
             createdAt: discordInvite.createdAt?.getTime() || Date.now()
           });
           
-          if (inviteCode.startsWith('bblip-')) {
+          if (inviteCode.startsWith('Waitlist-')) {
             customInviteTracking.set(inviteCode, {
               userId: savedInvite.discord_id,
               inviteCode: inviteCode,
@@ -2284,7 +2284,7 @@ async function loadSavedInviteLinks() {
                 createdAt: discordInvite.createdAt?.getTime() || Date.now()
               });
               
-              // Track custom invites (ALL invites, not just bblip- ones)
+              // Track custom invites (ALL invites, not just Waitlist- ones)
               customInviteTracking.set(inviteCode, {
                 userId: savedInvite.discord_id,
                 inviteCode: inviteCode,
@@ -2321,8 +2321,8 @@ async function initializeDiscordInviteTracking() {
       invites.forEach(invite => {
         // For custom invites created by bot, use the actual user ID from the code
         let actualInviterId = invite.inviter?.id;
-        if (invite.code.startsWith('bblip-') && invite.inviter?.id === client.user.id) {
-          actualInviterId = invite.code.replace('bblip-', '');
+        if (invite.code.startsWith('Waitlist-') && invite.inviter?.id === client.user.id) {
+          actualInviterId = invite.code.replace('Waitlist-', '');
           console.log(`🔗 Bot-created custom invite detected: ${invite.code} -> Actual User: ${actualInviterId}`);
         }
         
@@ -2332,10 +2332,10 @@ async function initializeDiscordInviteTracking() {
           createdAt: invite.createdAt?.getTime() || Date.now()
         });
         
-        // Track custom invites (ALL bot-created invites, not just bblip- ones)
+        // Track custom invites (ALL bot-created invites, not just Waitlist- ones)
         if (invite.inviter?.id === client.user.id) {
-          if (invite.code.startsWith('bblip-')) {
-            const customUserId = invite.code.replace('bblip-', '');
+          if (invite.code.startsWith('Waitlist-')) {
+            const customUserId = invite.code.replace('Waitlist-', '');
             customInviteTracking.set(invite.code, {
               userId: customUserId,
               inviteCode: invite.code,
@@ -2418,10 +2418,10 @@ async function processDiscordInvite(newMemberId) {
           console.log(`❌ No memory tracking found for invite ${code}`);
         }
         
-        // PRIORITY 3: Custom invite code parsing (bblip-USER_ID format)
+        // PRIORITY 3: Custom invite code parsing (Waitlist-USER_ID format)
         console.log(`🔍 Priority 3: Checking custom invite code format for ${code}`);
-        if (code.startsWith('bblip-')) {
-          const customInviterId = code.replace('bblip-', '');
+        if (code.startsWith('Waitlist-')) {
+          const customInviterId = code.replace('Waitlist-', '');
           console.log(`✅ Custom invite code detected, actual inviter: ${customInviterId}`);
           return {
             inviteCode: code,
